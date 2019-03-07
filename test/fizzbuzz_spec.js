@@ -2,25 +2,25 @@ var should=chai.should()
 
 describe('test fizzbuzz function',function(){
 
-    it('input 9 should return Fizz',function(){
+    it('should return Fizz when input divisibleBy 3',function(){
         let result=fizzBuzz(9)
         result.should.be.eql('Fizz')
 
     })
 
-    it('input 10 should return Buzz',function(){
+    it('should return Buzz when input divisibleBy 3',function(){
         let result=fizzBuzz(10)
         result.should.be.eql('Buzz')
 
     })
 
-    it('input 15 should return FizzBuzz',function(){
+    it('should return FizzBuzz when input divisibleBy 3',function(){
         let result=fizzBuzz(15)
         result.should.be.eql('FizzBuzz')
 
     })
 
-    it('input 11 should return 11',function(){
+    it('should return input when input is not divisibleBy 3 & 5',function(){
         let result=fizzBuzz(11)
         result.should.be.eql(11)
 
